@@ -270,11 +270,34 @@
 .banner {
     margin-bottom: 40px;
     position: relative;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+
+    .slick-dots {
+        bottom: 15px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    .slick-dots li button:before {
+        opacity: 0.5;
+        color: #ffffff;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 10px;
+    }
+
+    .single-item {
+        position: relative;
+    }
 
     .img {
         margin-bottom: 12px;
+        width: 100%;
 
         img {
             height: 100%;
@@ -282,10 +305,10 @@
         }
     }
 
-    .btn {
-        position: absolute;
-        bottom: -9px;
-    }
+    // .btn {
+    //     position: absolute;
+    //     bottom: -9px;
+    // }
 }
 
 .items-wrapper {
@@ -324,6 +347,8 @@
             text-decoration: none;
             font-family: $roboto-font-family;
             color: #2a2a2a;
+            justify-content: center;
+            align-items: center;
 
             .img {
                 margin-bottom: 15px;
